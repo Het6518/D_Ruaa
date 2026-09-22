@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-ivory: 250 247 241;
+  --color-cream: 244 237 226;
+  --color-linen: 238 224 211;
+  --color-charcoal: 38 33 29;
+  --color-muted: 118 106 96;
+  --color-clay: 164 91 65;
+  --color-cocoa: 91 65 49;
+  --color-border: 220 207 193;
+  color: rgb(var(--color-charcoal));
+  background: rgb(var(--color-ivory));
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; background: rgb(var(--color-ivory)); font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
+img { max-width: 100%; display: block; }
+a, button, input, textarea, select { outline-color: rgb(var(--color-clay)); }
+.container-px { @apply px-5 sm:px-8 lg:px-12; }
+.eyebrow { @apply text-xs font-semibold uppercase tracking-[0.22em] text-clay; }
+.section-y { @apply py-16 sm:py-20 lg:py-24; }
