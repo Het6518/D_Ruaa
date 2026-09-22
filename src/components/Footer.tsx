@@ -6,7 +6,17 @@ export function Footer() {
     <footer className="border-t border-border bg-linen/55">
       <div className="container-px mx-auto grid max-w-7xl gap-10 py-14 md:grid-cols-[1.4fr_1fr_1fr]">
         <div>
-          <p className="font-display text-3xl font-bold leading-none">Fragrances<br /><span className="text-xl tracking-[0.18em]">by D'Ruaa</span></p>
+          <div className="flex items-center gap-3">
+            <img
+              src="/logo.jpeg"
+              alt="Fragrances by D'Ruaa Logo"
+              className="w-12 h-12 object-contain rounded-full border border-border shadow-sm"
+            />
+            <div className="font-display font-bold leading-none">
+              <span className="text-2xl">Fragrances</span>
+              <span className="block text-xs tracking-[0.18em] text-muted">by D'Ruaa</span>
+            </div>
+          </div>
           <p className="mt-5 max-w-sm text-sm leading-7 text-muted">A warm, refined catalogue of fragrance materials and scented candles for people who choose scent with intention.</p>
         </div>
         <div>
