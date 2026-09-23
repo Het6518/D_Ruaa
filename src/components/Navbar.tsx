@@ -12,15 +12,15 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-border/70 bg-ivory/95 backdrop-blur">
       <nav className="container-px mx-auto flex max-w-7xl items-center justify-between py-3">
-        <Link to="/" className="flex items-center gap-3 group" onClick={() => setOpen(false)}>
+        <Link to="/" className="flex items-center gap-3.5 group" onClick={() => setOpen(false)}>
           <img
             src="/logo.jpeg"
             alt="Fragrances by D'Ruaa Logo"
-            className="w-10 h-10 object-contain rounded-full border border-border shadow-sm transition-transform duration-300 group-hover:scale-105"
+            className="w-11 h-11 object-contain rounded-full border border-border/80 shadow-sm transition-transform duration-300 group-hover:scale-105 shrink-0"
           />
-          <div className="font-display font-bold leading-none tracking-wide text-charcoal">
-            <span className="text-xl sm:text-2xl">Fragrances</span>
-            <span className="block text-xs sm:text-sm tracking-[0.2em] font-normal text-muted">by D'Ruaa</span>
+          <div className="flex flex-col justify-center font-display font-bold leading-tight tracking-wide text-charcoal">
+            <span className="text-xl sm:text-2xl leading-none">Fragrances</span>
+            <span className="text-[10px] sm:text-xs tracking-[0.2em] font-normal text-muted mt-0.5">by D'Ruaa</span>
           </div>
         </Link>
         <div className="hidden gap-7 lg:flex">
