@@ -1,5 +1,6 @@
 import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import { Analytics } from "@vercel/analytics/react";
 import { Footer } from "./components/Footer";
 import { Navbar } from "./components/Navbar";
 import { SignatureSplash } from "./components/SignatureSplash";
@@ -34,6 +35,7 @@ export default function App() {
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
       <Footer />
+      <Analytics />
     </div>
   );
 }
