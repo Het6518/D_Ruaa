@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Sparkles, HandHeart, Home as HomeIcon, MessageCircle, type LucideIcon } from "lucide-react";
 import { CategoryCard } from "../components/CategoryCard";
 import { CTASection } from "../components/CTASection";
+import { MeetFounder } from "../components/MeetFounder";
 import { ProductGrid } from "../components/ProductGrid";
 import { SectionHeading } from "../components/SectionHeading";
 import { getFeaturedProducts } from "../utils/productService";
@@ -31,7 +32,8 @@ export function Home() {
 
     <section className="container-px section-y bg-white/45"><div className="mx-auto max-w-7xl"><SectionHeading eyebrow="Featured" title="Featured Scents" text="A small selection from the current catalogue." /><div className="mt-12"><ProductGrid products={featured} /></div></div></section>
     <section className="container-px section-y"><div className="mx-auto max-w-7xl"><SectionHeading eyebrow="Why D'Ruaa" title="Quiet details, clear discovery." align="center" /><div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">{values.map(([Icon, title, text]) => <div key={String(title)} className="border border-border bg-cream/55 p-6"><Icon className="text-clay" size={28} /><h3 className="mt-5 font-display text-2xl font-semibold">{String(title)}</h3><p className="mt-3 text-sm leading-6 text-muted">{String(text)}</p></div>)}</div></div></section>
-    <section className="container-px section-y bg-linen/45"><div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-2"><div className="flex flex-col justify-center"><p className="eyebrow">Your Space, Your Scent</p><h2 className="mt-3 font-display text-5xl font-semibold">Find a scent that feels like you.</h2><p className="mt-5 text-base leading-8 text-muted">Fragrance can shape the feeling of a room, mark a memory and bring softness to everyday moments.</p><Link to="/fragrances" className="mt-8 text-sm font-semibold text-clay">Explore Fragrances ?</Link></div><img src="/c1.jpeg" alt="Candle glowing in a calm room" className="aspect-[4/3] w-full object-cover" /></div></section>
+    <section className="container-px section-y bg-linen/45"><div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-2"><div className="flex flex-col justify-center"><p className="eyebrow">Your Space, Your Scent</p><h2 className="mt-3 font-display text-5xl font-semibold">Find a scent that feels like you.</h2><p className="mt-5 text-base leading-8 text-muted">Fragrance can shape the feeling of a room, mark a memory and bring softness to everyday moments.</p><Link to="/fragrances" className="mt-8 text-sm font-semibold text-clay">Explore Fragrances →</Link></div><img src="/c1.jpeg" alt="Candle glowing in a calm room" className="aspect-[4/3] w-full object-cover" /></div></section>
+    <MeetFounder />
     <CTASection />
   </>;
 }
