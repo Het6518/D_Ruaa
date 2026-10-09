@@ -26,7 +26,7 @@ export function ProductCard({ product }: { product: Product }) {
         />
       </Link>
       <div className="pt-4">
-        <p className="text-xs font-semibold uppercase tracking-[0.16em] text-clay">{product.category === "fragrance" ? "Fragrance Material" : "Scented Candle"}</p>
+        <p className="text-xs font-semibold uppercase tracking-[0.16em] text-clay">{product.category === "fragrance" ? "Fragrance Product" : "Scented Candle"}</p>
         <Link to={`/product/${product.slug}`} className="mt-2 block font-display text-2xl font-semibold hover:text-clay">{product.name}</Link>
         <p className="mt-2 min-h-12 text-sm leading-6 text-muted">{product.shortDescription}</p>
         <Link to={`/product/${product.slug}`} className="mt-4 inline-flex text-sm font-semibold text-charcoal underline-offset-4 hover:text-clay hover:underline">View Product →</Link>

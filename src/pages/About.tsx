@@ -14,7 +14,7 @@ export function About() {
             <p className="eyebrow">About D'Ruaa</p>
             <h1 className="mt-4 font-display text-6xl font-semibold leading-none">The story behind D'Ruaa.</h1>
             <p className="mt-6 text-base leading-8 text-muted">
-              Fragrances by D'Ruaa is presented as a calm, premium catalogue for discovering fragrance materials and scented candles with clarity and care. We believe fragrance is more than a scent, it’s an experience. Every candle and fragrance is lovingly handcrafted to add warmth, personality, and a touch of luxury to your space.
+              Fragrances by D'Ruaa is presented as a calm, premium catalogue for discovering fragrance products and scented candles with clarity and care. We believe fragrance is more than a scent, it's an experience. Every candle and fragrance is lovingly handcrafted to add warmth, personality, and a touch of luxury to your space.
             </p>
             <Link to="/catalogue" className="mt-8 inline-flex bg-charcoal px-6 py-4 text-sm font-semibold text-ivory">Explore the Collection</Link>
           </div>
@@ -27,7 +27,7 @@ export function About() {
           <SectionHeading eyebrow="What We Offer" title="Fragrance materials and scented candles." text="The catalogue is structured for easy exploration, with scent profiles, notes, sizes and enquiry pathways kept simple to update as product information grows." />
           <div className="mt-10 grid gap-6 md:grid-cols-2">
             <div className="border border-border bg-ivory p-8">
-              <h2 className="font-display text-3xl font-semibold">Fragrance Materials</h2>
+              <h2 className="font-display text-3xl font-semibold">Fragrance Products</h2>
               <p className="mt-4 text-sm leading-7 text-muted">Aromatic profiles arranged for discovery by family, notes and intended applications where supplied.</p>
             </div>
             <div className="border border-border bg-ivory p-8">

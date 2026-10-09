@@ -37,7 +37,7 @@ export function SignatureSplash({ onComplete, duration = 4000 }: SignatureSplash
       <div className="relative max-w-lg w-[85%] sm:w-[70%] md:w-[50%] flex flex-col items-center justify-center p-6 text-center">
         <img
           src="/signature.gif"
-          alt="Fragrances by D_Ruaa Signature Reveal"
+          alt="Fragrances by D'Ruaa Signature Reveal"
           className="w-full max-h-[75vh] object-contain drop-shadow-sm"
         />
       </div>
