@@ -5,15 +5,19 @@ export type ProductNotes = {
   heart?: string[];
   base?: string[];
 };
-//notes
+
 export type Product = {
   id: string;
   slug: string;
   name: string;
   category: ProductCategory;
+  price?: number;
+  stock?: number;
+  size?: string;
   shortDescription: string;
   description?: string;
   fragranceFamily?: string;
+  ingredients?: string;
   profile?: string[];
   notes?: ProductNotes;
   sizes?: string[];
@@ -21,6 +25,10 @@ export type Product = {
   usageInfo?: string;
   burnTime?: string;
   waxType?: string;
+  imageUrl?: string;
   images: string[];
   featured?: boolean;
+  isActive?: boolean;
+  createdAt?: string;
+  updatedAt?: string;
 };
